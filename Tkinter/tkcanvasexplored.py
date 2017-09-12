@@ -13,7 +13,7 @@ master = tkinter.Tk()
 canvas_width = 300 
 canvas_height = 200 
 
-w = tkinter.Canvas(master, width=canvas_width,height=canvas_height) 
+'''w = tkinter.Canvas(master, width=canvas_width,height=canvas_height) 
 w.pack() 
  
 y = int(canvas_height / 2) 
@@ -77,6 +77,15 @@ w.pack()
 
 points = [0,0,canvas_width,canvas_height/2, 0, canvas_height]
 w.create_polygon(points, outline='green', 
-            fill='yellow', width=3)		  
+            fill='yellow', width=3)		'''  
+w = tkinter.Canvas(master, 
+           width=canvas_width, 
+           height=canvas_height)
+w.pack()
+
+w.create_oval(10,10,300,200)
+w.create_oval(20,20,290,190,outline="blue")
+w.create_oval(30,30,280,180,outline="green",fill='yellow')
+
 
 master.mainloop() 
