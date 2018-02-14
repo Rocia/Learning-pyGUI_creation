@@ -22,7 +22,7 @@ class Example(QWidget):
         lbl3.move(55, 70)        
         
         self.setGeometry(300, 300, 250, 150)
-        self.setWindowTitle('LLOY TECH')    
+        self.setWindowTitle('LLOY TECH')
         self.setWindowIcon(QIcon('images/LLOYtech.png'))
         self.show()
         
