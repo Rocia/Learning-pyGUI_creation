@@ -18,8 +18,7 @@ class Example(QWidget):
         self.show()
         
         
-    def closeEvent(self, event):
-        
+    def closeEvent(self, event):        
         reply = QMessageBox.question(self, 'Message',
             "Are you sure to quit?", QMessageBox.Yes | 
             QMessageBox.No, QMessageBox.No)
